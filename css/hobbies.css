@@ -38,8 +38,7 @@ header h1{
     justify-content: space-around;
     align-items: center;
     flex: 2;
-    padding: 0 45px;
-
+    padding: 20px;
 }
 
 .conteudo-principal aside p{
@@ -98,14 +97,15 @@ footer p{
 
 
 
-@media (max-width: 400px){
+@media (max-width: 900px){
     .conteudo-principal{
         display: flex;
         flex-direction: column;
         margin: 10px;
     }
 
-    aside{
-        margin: 15px;
+    aside p, aside a{
+        margin: 30px;
+        font-size: 15px;
     }
 }
