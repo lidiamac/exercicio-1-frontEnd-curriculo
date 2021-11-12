@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F2EA;
+    color: #7C4C96;
+}
+
+li{
+    list-style: none;
+}
+
+/* cabeçalho */
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #D7B0ED;
+        border-bottom: 1px solid #560088;
+    }
+
+    header h1{
+        color: #E1A10B;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        margin: 22px 0;
+        font-size: 45px;
+    }
+    header a {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    header a:hover{
+        color: #E1A10B;    
+    }
+/* fim cabeçalho */
+
+
+/* corpo do curriculo */
+
+mark{
+    background-color: #f2a9f8;
+}
+
+body>ul{
+    padding-left: 0;
+    width: 90%;
+}
+
+li>section{
+    padding: 30px 10px;
+}
+
+li>section:hover{
+    background-color: #d6b9e431;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section h2{
+    color: #1b0035;
+}
+
+section>a{
+    color: #570c9e;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section>a:hover{
+    color: #E1A10B;
+}
+
+section>ul{
+    padding: 0;
+}
+
+/* rodapé */
+footer{
+    width: 100%;
+    background-color: #7C4C96;
+    padding: 30px ;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.footer-links>a{
+    color: #E1A10B;
+    display: block;
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-links>a:hover{
+    background-color: #ffc746;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.redes-sociais img{
+    background-color: #ffebcd;
+    border-radius: 10px;
+}
+/* fim do rodapé */
+
+
+/* responsividade */
+@media (max-width: 400px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header>h1{
+        padding: 0;
+        font-size: 35px;
+    }
+
+    header>a{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    section h2{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    section p{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        width: 100%;
+    }
+}

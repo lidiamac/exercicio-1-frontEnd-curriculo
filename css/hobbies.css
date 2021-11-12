@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 ;
+    background-color: #F8F2EA;
+}
+
+
+/* cabecalho */
+header{
+    display: inline-block;
+    width: 100%;
+    background-color: #D7B0ED;
+}
+
+header h1{
+    font-size: 45px;
+    color: #E1A10B;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    margin: 22px 0;
+}
+/* fim cabecalho */
+
+
+/* container principal */
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-principal aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+    padding: 0 45px;
+
+}
+
+.conteudo-principal aside p{
+    line-height: 25px;
+    color: #7C4C96;
+}
+
+.conteudo-principal aside a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #400162;
+    font-weight: bold;
+}
+
+.conteudo-principal aside a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    color: #180025;
+}
+
+.conteudo-principal section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 3;
+}
+
+.meu-hobbie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2DAFF;
+    margin: 40px 0;
+}
+
+.meu-hobbie h2{
+    color: #a37200;
+}
+/* fim container principal */
+
+
+/* rodape */
+footer{
+    background-color: #7C4C96;
+}
+
+footer p{
+    margin: 0;
+    line-height: 20px;
+    padding: 35px ;
+    color: #e29e00;
+}
+/* fim rodape */
+
+
+
+@media (max-width: 400px){
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    aside{
+        margin: 15px;
+    }
+}
